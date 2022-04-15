@@ -33,6 +33,7 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ Route System require and use() ************
 const indexRouter = require('./routes/index')
 const formRouter = require('./routes/form')
+const favRouter = require('./routes/favourites')
 
 //Aquí llamo a la ruta de las api de movies
 const apiMoviesRouter = require('./routes/api/movies')
@@ -47,6 +48,7 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 /* routes */
 app.use('/', indexRouter)
 app.use('/form', formRouter)
+app.use('/fav', favRouter)
 
 //Aquí creo la colección de mis recursos de movies (APIs)
 app.use('/api/movies',apiMoviesRouter);

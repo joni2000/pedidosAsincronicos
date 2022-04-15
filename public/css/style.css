@@ -48,6 +48,7 @@ p {
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
+  position: relative;
 }
 
 .card:hover {
@@ -87,6 +88,30 @@ p {
 input, select{
   width: 60%;
   height: 25px;
+}
+
+.fav {
+  border: none;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.fav .fa-heart{
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(2, 2, 118);
+}
+
+.fav .fa-heart:hover {
+  color: rgb(255, 104, 129);
+}
+
+.pink {
+  color: rgb(255, 104, 129);
 }
 
 @media screen and (min-width: 600px) {

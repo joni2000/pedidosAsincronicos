@@ -162,7 +162,7 @@ const moviesAPIController = {
                     meta: {
                         status: 200,
                         total: confirm.length,
-                        url: 'api/movies/delete/:id'
+                        url: '/api/movies/delete/:id'
                     },
                     data:confirm
                 }
