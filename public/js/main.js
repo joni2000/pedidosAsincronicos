@@ -10,6 +10,7 @@ window.onload = () => {
   .then(peliculas => {
     let data = peliculas.data;
 
+    console.log(data)    
     data.forEach((movie) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
